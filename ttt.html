@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='ttt.css'>
+    </head>
+    <body>
+        <header>
+            <h1>Tic Tac Toe!</h1>
+        </header>
+        <div id='scoreKeep'>
+            <p id='playerOneDisplay'></p>
+            <p id='playerTwoDisplay'></p>
+        </div>
+        <div id='gameBoard'>
+            <div id='0' class='boardSquare'></div>
+            <div id='1' class='boardSquare'></div>
+            <div id='2' class='boardSquare'></div>
+            <div id='3' class='boardSquare'></div>
+            <div id='4' class='boardSquare'></div>
+            <div id='5' class='boardSquare'></div>
+            <div id='6' class='boardSquare'></div>
+            <div id='7' class='boardSquare'></div>
+            <div id='8' class='boardSquare'></div>
+        </div>
+    </body>
+        <div id='modal'>
+            <div id='modal-child'>
+                <form id='form'>
+                    <p>Welcome To My Tic Tac Toe Game!</p>
+                    <input type='text' name='name' id='firstPlayer' placeholder="Please enter the first players name" required>
+                    <input type='text' name='name' id='secondPlayer' placeholder="Please enter the second players name" required>
+                    <label for='x_or_o'>For the first player, please select your marker. The second player will be using whichever marker was not selected by the first player.</label>
+                    <div id='radio'>
+                        <label for="'x_or_o">X: </label>
+                        <input type='radio' name='x_or_o' value='X' required>
+                        <label for="'x_or_o">O: </label>
+                        <input type='radio' name='x_or_o' value='O'>
+                    </div>  
+                    <p>First to win 3 rounds. The loser of each round after the first will get to start next!</p>
+                    <input type='submit' name='submit' name="enter" value='Enter'>
+                </form>
+            </div>
+        </div>
+        <div id='restartScreen'>
+            <div id='restartChild'>
+                <p>Gameover!</p>
+                <p id='winningText'></p>
+                <div id='endBtns'>
+                    <button id='restartBtn'>Play Again?</button>
+                    <button id='newInfo'>New Player(s)</button>
+                </div>
+            </div>
+        </div>
+</html>
+
+<script src='ttt.js'></script>
